@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+
+{% block title %}Information{% endblock title %}
+{% block head %}
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{% endblock head %}
+{% block body %}
+
+<div class="container my-4 ">
+    <h1 class="text px-0" style='color:#d6c6b2; font-size:35px'>
+        Impact of COVID-19 on</h1>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3691506"
+               class="custom-card">
+                <div class="card shadow-sm text-white">
+                    <img src="/static/images/education.jpg" class="d-block w-100 " alt="...">
+                    <h3 class="card-title my-2">Education</h3>
+
+                    <div class="card-body">
+                        <p class="card-text">The COVID-19 pandemic has affected educational systems worldwide, leading
+                            to
+                            the near-total closures of schools, universities and colleges. Huge damage for college
+                            students</p>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <div class="col">
+            <a href="https://bfsi.economictimes.indiatimes.com/blog/impact-of-covid-19-on-the-indian-economy/4241"
+               class="custom-card">
+                <div class="card shadow-sm  text-white">
+                    <img src="/static/images/economy.jpg" class="d-block w-100 " alt="...">
+                    <title>Placeholder</title>
+                    <h3 class="card-title my-2">Economy</h3>
+
+                    <div class="card-body">
+                        <p class="card-text">The Indian economy was expected to lose over ₹32,000 crore every day during
+                            the
+                            first 21-days of complete lockdown, which was declared following the coronavirus
+                            outbreak.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="https://www.tandfonline.com/doi/full/10.1080/09603123.2020.1778646" class="custom-card">
+                <div class="card shadow-sm text-white">
+                    <img src="/static/images/enviroment.jpg" class="d-block w-100 " alt="...">
+                    <h3 class="card-title my-2">Enviroment</h3>
+
+                    <div class="card-body">
+                        <p class="card-text">The global disruption caused by the COVID-19 has brought about several
+                            effects
+                            on the environment and climate.Due to movement significant slowdown of
+                            economic activities </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col">
+            <a href="https://www.thehindubusinessline.com/info-tech/covid-19-impact-netflix-amazon-winning-battle-for-bollywood-eyeballs/article32156541.ece"
+               class="custom-card">
+                <div class="card shadow-sm text-white">
+                    <img src="/static/images/film.jpg" class="d-block w-100 " alt="...">
+                    <h3 class="card-title my-2">Film Industry</h3>
+
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content this content is a little bit longer.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="https://www.icrisat.org/containing-covid19-impacts-on-indian-agriculture/" class="custom-card">
+                <div class="card shadow-sm text-white">
+                    <img src="/static/images/agri.jpg" class="d-block w-100 " alt="...">
+                    <h3 class="card-title my-2">Agriculture</h3>
+                    <div class="card-body">
+                        <p class="card-text">The agricultural value chain in India has been adversely affected by the
+                            Covid-19 crisis and the resultant lockdown..</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="https://www.bloombergquint.com/economy-finance/41-lakh-youth-lose-jobs-in-india-due-to-covid-19-impact-ilo-adb-report"
+               class="custom-card">
+                <div class="card shadow-sm text-white">
+                    <img src="/static/images/unemployment.jpg" class="d-block w-100 "
+                         alt="...">
+                    <h3 class="card-title my-2">Unemployment</h3>
+
+                    <div class="card-body">
+                        <p class="card-text">The unemployment caused by the crisis led by the COVID 19 has been the most
+                            poignant than any other crisis in history.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<style>
+.card-body{
+background: #010915;
+border-radius: 10px;
+}
+.card-title{
+background: #010915;
+}
+.card{
+background: #010915;
+border-radius: 10px;
+}
+a.custom-card,
+a.custom-card:hover {
+  color: inherit;
+}
+.card:hover {
+  -ms-transform: scale(1.03); /* IE 9 */
+  -webkit-transform: scale(1.03); /* Safari 3-8 */
+  transform: scale(1.03);
+}
+
+
+
+</style>
+{% endblock body %}

@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+{% load static%}
+{% block title %}Home{% endblock title %}
+{% block body %}
+{% load plotly_dash %}
+<div class='container-fluid  px-0'>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/static/images/c1.jpg" class="d-block w-100 " alt="...">
+                <div class="carousel-caption d-none d-md-block">
+
+                    <h6 style="color:#62bbd1;"><b>everything was stable or we can say it was partially perfect but
+                        suddenly a disaster came and everything became ruined</b></h6>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/static/images/c2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="color:white;">To all coronavirus helpers , Thank you !</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/static/images/c3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="color:white;">It was tough time to everyone but hope everything will normal soon.</h5>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+</div>
+<br><br>
+<!--florish 1-->
+<div class="container-lg" style="margin:50">
+    <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/4748073" data-height="500px">
+        <script src="https://public.flourish.studio/resources/embed.js"></script>
+    </div>
+</div>
+<br>
+florish 2
+<div class="container-lg" style="margin:50">
+    <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/4812478" data-height="500px">
+        <script src="https://public.flourish.studio/resources/embed.js"></script>
+    </div>
+</div>
+<br>
+<!-- gdp 1 -->
+<div class="container-lg" style="margin:50">
+<iframe id="igraph5" scrolling="no" style="border:none;" seamless="seamless" src="static/Employment_og.html" height="500" width="100%"></iframe>
+</div>
+<br>
+<!-- employement -->
+<div class="container-lg" style="margin:50">
+<iframe id="igraph4" scrolling="no" style="border:none;" seamless="seamless" src="static/Employment.html" height="500" width="100%"></iframe>
+</div>
+<br>
+<!-- global education globe -->
+<div class="container-lg" style="margin:50">
+<iframe id="igraph6" scrolling="no" style="border:none;" seamless="seamless" src="static/global_education_impact.html" height="500" width="100%"></iframe>
+</div>
+<br>
+<!-- globe edu impact scatter -->
+<div class="container-lg" style="margin:50">
+<iframe id="igraph2" scrolling="no" style="border:none;" seamless="seamless" src="static/global_education_impact_scatter.html" height="500" width="100%"></iframe>
+</div>
+<br>
+<!-- film app -->
+<div class="container-lg-1" style="margin:50 ">
+    <div class="{% plotly_class name='simpleexample' %}card" style="height=100% width=100%">
+        {% plotly_app name='FILM_app1' ratio=0.65 %}
+    </div>
+</div>
+<br><br>
+<div class="container-lg" style="margin:50">
+    <div class="{% plotly_class name='simpleexample' %}card" style="height=100% width=100%">
+        {% plotly_app name='AQI_app1' ratio=0.65 %}
+    </div>
+</div>
+<br>
+<div class="container-lg" style="margin:50">
+<iframe id="igraph3" scrolling="no" style="border:none;" seamless="seamless" src="static/sabarmati_river.html" height="500" width="100%"></iframe>
+</div>
+<br>
+<br>
+<div class="container-lg" style="margin:50">
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="static/AQI_by_city1.html" height="500" width="100%"></iframe>
+</div>
+<style>
+.container-lg {
+    background: #010915;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.container-lg-1 {
+    background: #010915;
+    height: 853px;
+}
+h1{
+    color:black;
+}
+h6{
+     background: rgba(0,8,11, 0.5);
+ }
+
+</style>
+
+{% endblock %}

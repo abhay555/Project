@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+
+{% block title %}About{% endblock title %}
+{% block head %}
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{% endblock head %}
+{% block body %}
+<div class='container px-0'>
+    <div class="row g-0">
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-2">
+                            <div class="row ">
+                                <img src="/static/images/about.jpg" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 about-right">
+
+                        <h4 class="color-3"><b>Abhay Chaudhari</b></h4>
+                        <h4 class="title">Developer</h4><br><br>
+
+                        <p class="p-first text-white">
+                            Student at VIIT(Vishwakarma Institute of Information Technology) and working as a Design and
+                            Editing head at SEC cell.
+                            I am a person who love to interact with new technologies and analyse the things in different
+                            manner.
+                        </p>
+                        <p class="text-white">
+                            Main motive behind this project to analyse and visualize the actual impact of covid-19 on
+                            real world and to know about different sectors.
+                            Also to analyse how each sector affected by this pandemic.
+                        </p>
+
+                        <ul class="about-link">
+                            <li><a href="https://twitter.com/AbhayCh40677035"><i class="fa fa-twitter"></i></a></li>
+
+                            <li><a href="https://www.instagram.com/a_boy_chaudhari/"><i class="fa fa-instagram"></i></a>
+                            </li>
+
+                            <li><a href="https://www.linkedin.com/in/abhay-chaudhari/"><i
+                                    class="fa fa-linkedin"></i></a></li>
+
+                            <li><a href="https://github.com/abhay555"><i class="fa fa-github"></i></a></li>
+
+                        </ul>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <style>
+       body {
+        background: #0d1117;
+        font-family: tahoma;
+        text-align: justify;
+
+    }
+
+    .container{
+        padding:5px;
+    }
+        #about {
+        padding-top: 98px;
+        padding-bottom: 101px;
+    }
+
+
+    .fa-play {
+        font-size: 100px;
+
+    }
+
+
+    #about .p-first {
+        margin-bottom: 30px;
+    }
+
+
+    #about h2 {
+        margin-bottom: 47px;
+        margin-top: 12px;
+
+    }
+
+
+    #about .social-link-text {
+        margin-top: 50px;
+        margin-bottom: 25px;
+
+    }
+
+    #about .about-link {
+        padding-left: 0px;
+        padding-top:90px;
+    }
+
+    #about .about-link li {
+        display: inline-block;
+    }
+
+    #about .about-link li a i {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        line-height: 50px;
+        text-align: center;
+        border: 1px solid #d6c6b2;
+        margin-right: 10px;
+        font-size: 22px;
+        color: #d6c6b2;
+        transition: all .3s;
+
+    }
+
+
+    #about .about-link li a i:hover {
+        color: #222222;
+        background: #d6c6b2;
+        border-color: #d6c6b2;
+
+    }
+
+    .color-3 {
+        color: #d6c6b2;
+        font-size:35px;
+    }
+
+
+    .text-white {
+        color: white;
+    }
+
+
+    p {
+        margin-bottom: 0;
+        font-size: 16px;
+        line-height: 24px;
+        color: #d6c6b2;
+        b
+    }
+
+    .btn-danger {
+        border-radius: 0;
+        padding: 10px 20px;
+    }
+.title{
+color:#616A6B;
+}
+
+
+
+    </style>
+</div>
+{% endblock body %}
