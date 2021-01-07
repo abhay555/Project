@@ -99,6 +99,7 @@ FILM_app1 = DjangoDash('FILM_app1')
 film_df = pd.read_html('https://en.wikipedia.org/wiki/List_of_films_impacted_by_the_COVID-19_pandemic')[4].dropna(
     how='all', axis=1)
 film_df.columns = ['Film', 'Original date', 'New date']
+film_df = film_df.head(150)
 film_df['New date'] = film_df['New date'].apply(lambda x: x.split('[')[0])
 film_df['Original date'] = film_df['Original date'].apply(
     lambda x: x.split('[')[0])
